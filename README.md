@@ -230,20 +230,20 @@ print(le.inverse_transform(x_single_prediction))
 ## OUTPUT
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![309490580-9186aa23-2275-4cac-86c8-ce9d7f90531f](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/4e0c518a-f93c-4931-a0e1-e708a212239d)
+![1 1](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/6f7b0322-66cd-4b36-a3ec-1440a236523a)
 
 ### Classification Report
 
-![309490590-9afa5777-1f5b-441d-a5bd-5eb4acbcb4cb](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/daec5cbe-6e83-45bf-bf7e-cc3db92e6df0)
+![1 3](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/9f1d031a-8fba-41b5-9cc0-b612130c3720)
 
 ### Confusion Matrix
 
-![309490703-5bde4576-c961-4cc0-84dd-3aae16555bae](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/689284f4-cc65-40bb-a584-1331e169c1fa)
+![1 2](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/74582b10-9ea2-4f74-9a91-e08b813f9033)
 
 
 ### New Sample Data Prediction
 
-![309490621-c7a2ec46-570a-489a-b13c-d14506693230](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/6bf913d0-1dde-4cfc-aca8-83b23400b7ee)
+![1 4](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/fbd3b9ae-49c4-4861-984c-3e207808a0aa)
 
 ### RESULT
 A neural network classification model is developed for the given dataset.
