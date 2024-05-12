@@ -114,23 +114,17 @@ cust_1[['Gender','Ever_Married','Graduated','Profession','Spending_Score']]=enc.
 
 cust_1.dtypes
 
-
 le = LabelEncoder()
      
-
 cust_1['Segmentation'] = le.fit_transform(cust_1['Segmentation'])
      
-
 cust_1.dtypes
      
-
 cust_1 = cust_1.drop('ID',axis=1)
 cust_1 = cust_1.drop('Var_1',axis=1)
      
-
 cust_1.dtypes
      
-
 # Calculate the correlation matrix
 corr = cust_1.corr()
 
@@ -170,7 +164,6 @@ X_test_scaled = np.copy(X_test)
 # To scale the Age column
 X_train_scaled[:,2] = scaler_age.transform(X_train[:,2].reshape(-1,1)).reshape(-1)
 X_test_scaled[:,2] = scaler_age.transform(X_test[:,2].reshape(-1,1)).reshape(-1)
-
 
 # Creating the model
 ai_brain = Sequential([
@@ -218,35 +211,23 @@ with open('customer_data.pickle', 'rb') as fh:
 x_single_prediction = np.argmax(ai_brain.predict(X_test_scaled[1:2,:]), axis=1)
 print(x_single_prediction)
 print(le.inverse_transform(x_single_prediction))
-
-
 ```
 
 ## Dataset Information
-
 ![309490559-8d0331ed-9f34-4cba-a1e8-6239468e2ba2](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/7fe8d5fd-b788-49c5-99ff-72941519ce3d)
-
 
 ## OUTPUT
 ### Training Loss, Validation Loss Vs Iteration Plot
-
 ![1 1](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/6f7b0322-66cd-4b36-a3ec-1440a236523a)
 
 ### Classification Report
-
 ![1 3](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/9f1d031a-8fba-41b5-9cc0-b612130c3720)
 
 ### Confusion Matrix
-
 ![1 2](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/74582b10-9ea2-4f74-9a91-e08b813f9033)
 
-
 ### New Sample Data Prediction
-
 ![1 4](https://github.com/SanthoshUthiraKumar/nn-classification/assets/119477975/fbd3b9ae-49c4-4861-984c-3e207808a0aa)
 
 ### RESULT
 A neural network classification model is developed for the given dataset.
-
-
-
